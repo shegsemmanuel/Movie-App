@@ -1,0 +1,154 @@
+/* Minimal working CSS for testing */
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  background-color: #030014;
+  color: white;
+}
+
+#root {
+  min-height: 100vh;
+  padding: 20px;
+}
+
+main {
+  min-height: 100vh;
+  position: relative;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+header img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px 0;
+}
+
+h2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, #D6C7FF, #AB8BFF);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.search {
+  max-width: 600px;
+  margin: 20px auto;
+  position: relative;
+}
+
+.search div {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.search img {
+  position: absolute;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+}
+
+.search input {
+  width: 100%;
+  padding: 12px 40px;
+  background: rgba(206, 206, 251, 0.1);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+}
+
+.search input::placeholder {
+  color: #a8b5db;
+}
+
+.all-movies ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.movie-card {
+  background: #0f0d23;
+  padding: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.movie-card h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.movie-card .content {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  color: #9ca4ab;
+}
+
+.movie-card .rating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.movie-card .rating img {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+}
+
+.movie-card .rating p {
+  color: white;
+  font-weight: bold;
+  margin: 0;
+}
+
+.text-red-500 {
+  color: #ef4444;
+  text-align: center;
+  padding: 20px;
+}
